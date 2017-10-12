@@ -1135,6 +1135,8 @@ static void print_program_info(int flags, int level)
 
 static void print_buildconf(int flags, int level)
 {
+/*begin for vs2015*/
+#if 0
     const char *indent = flags & INDENT ? "  " : "";
     char str[] = { FFMPEG_CONFIGURATION };
     char *conflist, *remove_tilde, *splitconf;
@@ -1157,6 +1159,8 @@ static void print_buildconf(int flags, int level)
         av_log(NULL, level, "%s%s%s\n", indent, indent, splitconf);
         splitconf = strtok(NULL, "~");
     }
+#endif
+/*end for vs2015*/
 }
 
 void show_banner(int argc, char **argv, const OptionDef *options)
@@ -1958,6 +1962,8 @@ FILE *get_preset_file(char *filename, size_t filename_size,
                       const char *codec_name)
 {
     FILE *f = NULL;
+/*begin for vs2015*/
+#if 0
     int i;
     const char *base[3] = { getenv("FFMPEG_DATADIR"),
                             getenv("HOME"),
@@ -1999,7 +2005,8 @@ FILE *get_preset_file(char *filename, size_t filename_size,
             }
         }
     }
-
+#endif
+/*end for vs2015*/
     return f;
 }
 

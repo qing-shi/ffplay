@@ -31,8 +31,6 @@
 // export plugins, or graphical user interfaces.
 
 /*begin for vs2015*/
-#define FFMPEG_CONFIGURATION "ffmpeg configuration. you can define yours"
-#define FFMPEG_DATADIR "ffmpeg preset. you can define yours"
 #define HAVE_COMMANDLINETOARGVW 1
 #define CONFIG_SWSCALE 1
 /*end for vs2015*/
