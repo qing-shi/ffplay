@@ -57,4 +57,7 @@
 #   error Unsupported CPU architecture.
 #endif
 
+#define inline __inline
+#define snprintf _snprintf
+
 #endif //AVS_CONFIG_H
